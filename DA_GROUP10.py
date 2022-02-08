@@ -12,4 +12,4 @@ class NewSpider(scrapy.Spider):
        'Image Link':x.xpath(newsel).extract_first()
      }
    
-  hi
+ 
