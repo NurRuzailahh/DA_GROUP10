@@ -22,3 +22,16 @@ Welcome to Group10 Website !
 """
     client_connection.sendall(bytes(http_response, "utf-8"))
     client_connection.close();
+    
+# Use the Request library
+import requests
+# Set the target webpage
+url = 'https://brickset.com/sets/year-2009'
+r = requests.get(url)
+# This will get the full page
+print(r.text)
+
+# This will get the status code
+print("Status code:")
+print("\t *", r.status_code)
+
